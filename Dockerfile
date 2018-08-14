@@ -66,8 +66,8 @@ RUN \
  ./install && \
  echo "**** fix group for card readers and add abc to dialout group ****" && \
  groupmod -g 24 cron && \
- groupmod -g 16 dialout && \
- usermod -a -G 16 abc && \
+ groupmod -g 20 dialout && \
+ usermod -a -G 20 abc && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
