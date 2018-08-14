@@ -28,7 +28,7 @@ RUN \
 	pcsc-lite \
 	pcsc-lite-libs && \
  echo "**** compile oscam ****" && \
- bzr branch lp:oscam /tmp/oscam-svn && \
+ bzr branch -r revno:10023 lp:oscam /tmp/oscam-svn && \
  cd /tmp/oscam-svn && \
  ./config.sh \
 	--enable all \
