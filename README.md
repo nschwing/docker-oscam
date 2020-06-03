@@ -1,59 +1,85 @@
-[linuxserverurl]: https://linuxserver.io
-[forumurl]: https://forum.linuxserver.io
-[ircurl]: https://www.linuxserver.io/irc/
-[podcasturl]: https://www.linuxserver.io/podcast/
-[appurl]: http://www.streamboard.tv/oscam/
-[hub]: https://hub.docker.com/r/linuxserver/oscam/
+[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)](https://linuxserver.io)
 
-[![linuxserver.io](https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/linuxserver_medium.png)][linuxserverurl]
+[![Blog](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Blog)](https://blog.linuxserver.io "all the things you can do with our containers including How-To guides, opinions and much more!")
+[![Discord](https://img.shields.io/discord/354974912613449730.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Discord&logo=discord)](https://discord.gg/YWrKVTn "realtime support / chat with the community and the team.")
+[![Discourse](https://img.shields.io/discourse/https/discourse.linuxserver.io/topics.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=discourse)](https://discourse.linuxserver.io "post on our community forum.")
+[![Fleet](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=Fleet)](https://fleet.linuxserver.io "an online web interface which displays all of our maintained images.")
+[![GitHub](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub&logo=github)](https://github.com/linuxserver "view the source for all of our repositories.")
+[![Open Collective](https://img.shields.io/opencollective/all/linuxserver.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=Supporters&logo=open%20collective)](https://opencollective.com/linuxserver "please consider helping us by either donating or contributing to our budget")
 
-The [LinuxServer.io][linuxserverurl] team brings you another container release featuring easy user mapping and community support. Find us for support at:
-* [forum.linuxserver.io][forumurl]
-* [IRC][ircurl] on freenode at `#linuxserver.io`
-* [Podcast][podcasturl] covers everything to do with getting the most from your Linux Server plus a focus on all things Docker and containerisation!
+The [LinuxServer.io](https://linuxserver.io) team brings you another container release featuring:
 
-# linuxserver/oscam
-[![](https://images.microbadger.com/badges/version/linuxserver/oscam.svg)](https://microbadger.com/images/linuxserver/oscam "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/image/linuxserver/oscam.svg)](https://microbadger.com/images/linuxserver/oscam "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/oscam.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/linuxserver/oscam.svg)][hub][![Build Status](https://ci.linuxserver.io/buildStatus/icon?job=Docker-Builders/x86-64/x86-64-oscam)](https://ci.linuxserver.io/job/Docker-Builders/job/x86-64/job/x86-64-oscam/)
+ * regular and timely application updates
+ * easy user mappings (PGID, PUID)
+ * custom base image with s6 overlay
+ * weekly base OS updates with common layers across the entire LinuxServer.io ecosystem to minimise space usage, down time and bandwidth
+ * regular security updates
 
-[Oscam][appurl] is an Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards. It's both a server and a client.
+Find us at:
+* [Blog](https://blog.linuxserver.io) - all the things you can do with our containers including How-To guides, opinions and much more!
+* [Discord](https://discord.gg/YWrKVTn) - realtime support / chat with the community and the team.
+* [Discourse](https://discourse.linuxserver.io) - post on our community forum.
+* [Fleet](https://fleet.linuxserver.io) - an online web interface which displays all of our maintained images.
+* [GitHub](https://github.com/linuxserver) - view the source for all of our repositories.
+* [Open Collective](https://opencollective.com/linuxserver) - please consider helping us by either donating or contributing to our budget
 
-[![oscam](http://download.oscam.cc/images/Logo.png)][appurl]
+# [linuxserver/oscam](https://github.com/linuxserver/docker-oscam)
+
+[![GitHub Stars](https://img.shields.io/github/stars/linuxserver/docker-oscam.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-oscam)
+[![GitHub Release](https://img.shields.io/github/release/linuxserver/docker-oscam.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&logo=github)](https://github.com/linuxserver/docker-oscam/releases)
+[![GitHub Package Repository](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitHub%20Package&logo=github)](https://github.com/linuxserver/docker-oscam/packages)
+[![GitLab Container Registry](https://img.shields.io/static/v1.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=linuxserver.io&message=GitLab%20Registry&logo=gitlab)](https://gitlab.com/Linuxserver.io/docker-oscam/container_registry)
+[![MicroBadger Layers](https://img.shields.io/microbadger/layers/linuxserver/oscam.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge)](https://microbadger.com/images/linuxserver/oscam "Get your own version badge on microbadger.com")
+[![Docker Pulls](https://img.shields.io/docker/pulls/linuxserver/oscam.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=pulls&logo=docker)](https://hub.docker.com/r/linuxserver/oscam)
+[![Docker Stars](https://img.shields.io/docker/stars/linuxserver/oscam.svg?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=stars&logo=docker)](https://hub.docker.com/r/linuxserver/oscam)
+[![Jenkins Build](https://img.shields.io/jenkins/build?labelColor=555555&logoColor=ffffff&style=for-the-badge&jobUrl=https%3A%2F%2Fci.linuxserver.io%2Fjob%2FDocker-Pipeline-Builders%2Fjob%2Fdocker-oscam%2Fjob%2Fmaster%2F&logo=jenkins)](https://ci.linuxserver.io/job/Docker-Pipeline-Builders/job/docker-oscam/job/master/)
+[![LSIO CI](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=CI&query=CI&url=https%3A%2F%2Flsio-ci.ams3.digitaloceanspaces.com%2Flspipepr%2Foscam%2Flatest%2Fci-status.yml)](https://lsio-ci.ams3.digitaloceanspaces.com/linuxserver/oscam/latest/index.html)
+
+[Oscam](http://www.streamboard.tv/oscam/) is an Open Source Conditional Access Module software used for descrambling DVB transmissions using smart cards. It's both a server and a client.
+
+[![oscam](http://download.oscam.cc/images/Logo.png)](http://www.streamboard.tv/oscam/)
+
+## Supported Architectures
+
+Our images support multiple architectures such as `x86-64`, `arm64` and `armhf`. We utilise the docker manifest for multi-platform awareness. More information is available from docker [here](https://github.com/docker/distribution/blob/master/docs/spec/manifest-v2-2.md#manifest-list) and our announcement [here](https://blog.linuxserver.io/2019/02/21/the-lsio-pipeline-project/).
+
+Simply pulling `linuxserver/oscam` should retrieve the correct image for your arch, but you can also pull specific arch images via tags.
+
+The architectures supported by this image are:
+
+| Architecture | Tag |
+| :----: | --- |
+| x86-64 | amd64-latest |
+| arm64 | arm64v8-latest |
+| armhf | arm32v7-latest |
+
 
 ## Usage
+
+Here are some example snippets to help you get started creating a container.
+
+### docker
 
 ```
 docker create \
   --name=oscam \
-  -v <path to data>:/config \
-  -e PGID=<gid> -e PUID=<uid>  \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Europe/London \
   -p 8888:8888 \
-  --device=/dev/ttyUSB0 \
+  -v <path to data>:/config \
+  --device /dev/ttyUSB0:/dev/ttyUSB0 \
+  --restart unless-stopped \
   linuxserver/oscam
 ```
 
-## Parameters
-
-`The parameters are split into two halves, separated by a colon, the left hand side representing the host and the right the container side. 
-For example with a port -p external:internal - what this shows is the port mapping from internal to external of the container.
-So -p 8080:80 would expose port 80 from inside the container to be accessible from the host's IP on port 8080
-http://192.168.x.x:8080 would show you what's running INSIDE the container on port 80.`
-
-
-* `-p 8888` - the port(s)
-* `-v /config` - where oscam should store config files and logs
-* `-e PGID` for GroupID - see below for explanation
-* `-e PUID` for UserID - see below for explanation
-* `--device=/dev/ttyUSB0` - for passing through smart card readers
-
-It is based on alpine linux with s6 overlay, for shell access whilst the container is running do `docker exec -it oscam /bin/bash`.
-
 ### Passing through Smart Card Readers
 
-If you want to pass through a smart card reader, you need to specify the reader with the `--device=` tag. The method used depends on how the reader is recognized. 
+If you want to pass through a smart card reader, you need to specify the reader with the `--device=` tag. The method used depends on how the reader is recognized.
 The first is /dev/ttyUSBX. To find the correct device, connect the reader and run `dmesg | tail` on the host. In the output you will find /dev/ttyUSBX, where X is the number of the device. If this is the first reader you connect to your host, it will be /dev/ttyUSB0. If you add one more it will be /dev/ttyUSB1.
 
 If there are no /dev/ttyUSBX device in `dmesg | tail`, you have to use the USB bus path. It will look similar to the below.
- 
+
 `/dev/bus/usb/001/001`
 
 The important parts are the two numbers in the end. The first one is the Bus number, the second is the Device number. To find the Bus and Device number you have to run `lsusb` on the host, then find your USB device in the list and note the Bus and Device numbers.
@@ -68,44 +94,164 @@ The first number, the Bus, is 002. The second number, the Device, is 005. This w
 
 If you have multiple smart card readers, you add one `--device=` tag for each reader.
 
-### User / Group Identifiers
 
-Sometimes when using data volumes (`-v` flags) permissions issues can arise between the host OS and the container. We avoid this issue by allowing you to specify the user `PUID` and group `PGID`. Ensure the data volume directory on the host is owned by the same user you specify and it will "just work" ™.
+### docker-compose
 
-In this instance `PUID=1001` and `PGID=1001`. To find yours use `id user` as below:
+Compatible with docker-compose v2 schemas.
 
 ```
-  $ id <dockeruser>
-    uid=1001(dockeruser) gid=1001(dockergroup) groups=1001(dockergroup)
+---
+version: "2.1"
+services:
+  oscam:
+    image: linuxserver/oscam
+    container_name: oscam
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/London
+    volumes:
+      - <path to data>:/config
+    ports:
+      - 8888:8888
+    devices:
+      - /dev/ttyUSB0:/dev/ttyUSB0
+    restart: unless-stopped
 ```
 
-## Setting up the application
+## Parameters
+
+Container images are configured using parameters passed at runtime (such as those above). These parameters are separated by a colon and indicate `<external>:<internal>` respectively. For example, `-p 8080:80` would expose port `80` from inside the container to be accessible from the host's IP on port `8080` outside the container.
+
+| Parameter | Function |
+| :----: | --- |
+| `-p 8888` | WebUI |
+| `-e PUID=1000` | for UserID - see below for explanation |
+| `-e PGID=1000` | for GroupID - see below for explanation |
+| `-e TZ=Europe/London` | Specify a timezone to use EG Europe/London. |
+| `-v /config` | Where oscam should store config files and logs. |
+| `--device /dev/ttyUSB0` | For passing through smart card readers. |
+
+## Environment variables from files (Docker secrets)
+
+You can set any environment variable from a file by using a special prepend `FILE__`.
+
+As an example:
+
+```
+-e FILE__PASSWORD=/run/secrets/mysecretpassword
+```
+
+Will set the environment variable `PASSWORD` based on the contents of the `/run/secrets/mysecretpassword` file.
+
+## Umask for running applications
+
+For all of our images we provide the ability to override the default umask settings for services started within the containers using the optional `-e UMASK=022` setting.
+Keep in mind umask is not chmod it subtracts from permissions based on it's value it does not add. Please read up [here](https://en.wikipedia.org/wiki/Umask) before asking for support.
+
+## User / Group Identifiers
+
+When using volumes (`-v` flags) permissions issues can arise between the host OS and the container, we avoid this issue by allowing you to specify the user `PUID` and group `PGID`.
+
+Ensure any volume directories on the host are owned by the same user you specify and any permissions issues will vanish like magic.
+
+In this instance `PUID=1000` and `PGID=1000`, to find yours use `id user` as below:
+
+```
+  $ id username
+    uid=1000(dockeruser) gid=1000(dockergroup) groups=1000(dockergroup)
+```
+
+
+&nbsp;
+## Application Setup
 
 To set up oscam there are numerous guides on the internet. There are too many scenarios to make a quick guide.
 The web interface is at port 8888.
 
 
-## Info
+## Docker Mods
+[![Docker Mods](https://img.shields.io/badge/dynamic/yaml?color=94398d&labelColor=555555&logoColor=ffffff&style=for-the-badge&label=mods&query=%24.mods%5B%27oscam%27%5D.mod_count&url=https%3A%2F%2Fraw.githubusercontent.com%2Flinuxserver%2Fdocker-mods%2Fmaster%2Fmod-list.yml)](https://mods.linuxserver.io/?mod=oscam "view available mods for this container.")
+
+We publish various [Docker Mods](https://github.com/linuxserver/docker-mods) to enable additional functionality within the containers. The list of Mods available for this image (if any) can be accessed via the dynamic badge above.
+
+
+## Support Info
 
 * Shell access whilst the container is running: `docker exec -it oscam /bin/bash`
 * To monitor the logs of the container in realtime: `docker logs -f oscam`
-
-* container version number 
-
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' oscam`
-
+* container version number
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' oscam`
 * image version number
+  * `docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/oscam`
 
-`docker inspect -f '{{ index .Config.Labels "build_version" }}' linuxserver/oscam`
+## Updating Info
+
+Most of our images are static, versioned, and require an image update and container recreation to update the app inside. With some exceptions (ie. nextcloud, plex), we do not recommend or support updating apps inside the container. Please consult the [Application Setup](#application-setup) section above to see if it is recommended for the image.
+
+Below are the instructions for updating containers:
+
+### Via Docker Run/Create
+* Update the image: `docker pull linuxserver/oscam`
+* Stop the running container: `docker stop oscam`
+* Delete the container: `docker rm oscam`
+* Recreate a new container with the same docker create parameters as instructed above (if mapped correctly to a host folder, your `/config` folder and settings will be preserved)
+* Start the new container: `docker start oscam`
+* You can also remove the old dangling images: `docker image prune`
+
+### Via Docker Compose
+* Update all images: `docker-compose pull`
+  * or update a single image: `docker-compose pull oscam`
+* Let compose update all containers as necessary: `docker-compose up -d`
+  * or update a single container: `docker-compose up -d oscam`
+* You can also remove the old dangling images: `docker image prune`
+
+### Via Watchtower auto-updater (especially useful if you don't remember the original parameters)
+* Pull the latest image at its tag and replace it with the same env variables in one run:
+  ```
+  docker run --rm \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  containrrr/watchtower \
+  --run-once oscam
+  ```
+
+**Note:** We do not endorse the use of Watchtower as a solution to automated updates of existing Docker containers. In fact we generally discourage automated updates. However, this is a useful tool for one-time manual updates of containers where you have forgotten the original parameters. In the long term, we highly recommend using Docker Compose.
+
+* You can also remove the old dangling images: `docker image prune`
+
+## Building locally
+
+If you want to make local modifications to these images for development purposes or just to customize the logic:
+```
+git clone https://github.com/linuxserver/docker-oscam.git
+cd docker-oscam
+docker build \
+  --no-cache \
+  --pull \
+  -t linuxserver/oscam:latest .
+```
+
+The ARM variants can be built on x86_64 hardware using `multiarch/qemu-user-static`
+```
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
+```
+
+Once registered you can define the dockerfile to use with `-f Dockerfile.aarch64`.
 
 ## Versions
 
-+ **03.01.18:** Deprecate cpu_core routine lack of scaling.
-+ **13.12.17:** Rebase to alpine 3.7.
-+ **19.10.17:** Add ccid package for usb card readers.
-+ **17.10.17:** Switch to using bzr for source code, streamboard awol.
-+ **28.05.17:** Rebase to alpine 3.6.
-+ **09.02.17:** Rebase to alpine 3.5.
-+ **14.10.16:** Add version layer information.
-+ **02.10.16:** Add info on passing through devices to README.
-+ **25.09.16:** Initial release.
+* **19.12.19:** - Rebasing to alpine 3.11.
+* **28.06.19:** - Rebasing to alpine 3.10.
+* **29.04.19:** - Add revision check, so pipeline can build new revisions.
+* **28.04.19:** - Switch back to streamboard svn to fix version not showing in UI.
+* **23.03.19:** - Switching to new Base images, shift to arm32v7 tag.
+* **19.02.19:** - Add pipeline logic and multi arch, rebase to Alpine 3.8.
+* **03.01.18:** - Deprecate cpu_core routine lack of scaling.
+* **13.12.17:** - Rebase to alpine 3.7.
+* **19.10.17:** - Add ccid package for usb card readers.
+* **17.10.17:** - Switch to using bzr for source code, streamboard awol.
+* **28.05.17:** - Rebase to alpine 3.6.
+* **09.02.17:** - Rebase to alpine 3.5.
+* **14.10.16:** - Add version layer information.
+* **02.10.16:** - Add info on passing through devices to README.
+* **25.09.16:** - Initial release.

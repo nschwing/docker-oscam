@@ -1,4 +1,4 @@
-FROM lsiobase/alpine:3.11
+FROM lsiobase/alpine:arm32v7-3.11
 
 # set version label
 ARG BUILD_DATE
@@ -71,8 +71,8 @@ RUN \
  ./install && \
  echo "**** fix group for card readers and add abc to dialout group ****" && \
  groupmod -g 24 cron && \
- groupmod -g 20 dialout && \
- usermod -a -G 20 abc && \
+ groupmod -g 16 dialout && \
+ usermod -a -G 16 abc && \
  echo "**** cleanup ****" && \
  apk del --purge \
 	build-dependencies && \
